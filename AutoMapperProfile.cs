@@ -1,6 +1,7 @@
 using System;
 using AutoMapper;
 using DotNetCourse.Dtos.Character;
+using DotNetCourse.Dtos.Item;
 using DotNetCourse.Models;
 
 namespace DotNetCourse
@@ -11,6 +12,8 @@ namespace DotNetCourse
         {
             CreateMap<Character, GetCharacterDto>();
             CreateMap<AddCharacterDto, Character>();
+            CreateMap<Item, GetItemDto>();
+            CreateMap<AddItemDto, Item>();
         }
 
     }
