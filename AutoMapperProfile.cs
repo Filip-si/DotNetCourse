@@ -2,6 +2,8 @@ using System;
 using AutoMapper;
 using DotNetCourse.Dtos.Character;
 using DotNetCourse.Dtos.Item;
+using DotNetCourse.Dtos.Skill;
+using DotNetCourse.Dtos.Weapon;
 using DotNetCourse.Models;
 
 namespace DotNetCourse
@@ -14,6 +16,8 @@ namespace DotNetCourse
             CreateMap<AddCharacterDto, Character>();
             CreateMap<Item, GetItemDto>();
             CreateMap<AddItemDto, Item>();
+            CreateMap<Weapon, GetWeaponDto>();
+            CreateMap<Skill, GetSkillDto>();
         }
 
     }
