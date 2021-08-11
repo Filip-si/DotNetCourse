@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace DotNetCourse.Models
 {
@@ -10,5 +11,9 @@ namespace DotNetCourse.Models
         public byte[] PasswordSalt { get; set; }    
         
         public List<Character> Characters { get; set; }
+
+        [Required]
+        public string Role { get; set; }
+
     }
 }
